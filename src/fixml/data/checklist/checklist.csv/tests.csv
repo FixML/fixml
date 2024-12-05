@@ -1,10 +1,10 @@
 ID,Topic,Requirement,References,Is Evaluator Applicable
 1.1,General,Test machine learning pipeline can run from end-to-end on a small subset of the data and handle failures appropriately,Breck et al (2017),1
-1.2,General,Test loading files (e.g., data, models) works as expected and handle failures appropriately,Microsoft Industry Solutions Engineering Team (2024),1
-1.3,General,Test saving files (e.g., data, models) works as expected and handle failures appropriately,,1
-2.1,Data extraction,Test connection to the data source (e.g., API, URL or file system) is successful, and handle failures appropriately,,1
+1.2,General,Test loading files (e.g. data; models) works as expected and handle failures appropriately,Microsoft Industry Solutions Engineering Team (2024),1
+1.3,General,Test saving files (e.g. data; models) works as expected and handle failures appropriately,,1
+2.1,Data extraction,Test connection to the data source (e.g. API; URL or file system) is successful and handle failures appropriately,,1
 2.2,Data extraction,Test extraction of data from source works as expected and handle failures appropriately,Microsoft Industry Solutions Engineering Team (2024),1
-2.3,Data extraction,Test extracted data filetype, structure and/or schema is correct and handle failures appropriately,,1
+2.3,Data extraction,Test extracted data filetype; structure and/or schema is correct and handle failures appropriately,,1
 3.1,Data Quality,Test validation of data format and handle invalid formats appropriately,Microsoft Industry Solutions Engineering Team (2024),1
 3.2,Data Quality,Data Test checks data schema/column names and handle errors or missingness  appropriately,Chorev et al (2022),1
 3.3,Data Quality,Test checks for data types and handle identified incorrect data types appropriately,Chorev et al (2022);Microsoft Industry Solutions Engineering Team (2024),1
@@ -12,26 +12,26 @@ ID,Topic,Requirement,References,Is Evaluator Applicable
 3.5,Data Quality,Test checks for category levels and handles any single values and string mismatches appropriately,Chorev et al (2022),1
 3.6,Data Quality,Test checks for missingness and handle identified missingness appropriately,Chorev et al (2022);Microsoft Industry Solutions Engineering Team (2024),1
 3.7,Data Quality,Test checks for outliers or anomalies and handles them appropriately,Chorev et al (2022);Microsoft Industry Solutions Engineering Team (2024);Breck et al (2017),1
-3.8,Data Quality,Test checks for anomalous correlations between target and features, and between features. Handle anomalous correlations appropriately,Chorev et al (2022),1
+3.8,Data Quality,Test checks for anomalous correlations between target and features and between features. Handle anomalous correlations appropriately,Chorev et al (2022),1
 3.9,Data Quality,Test checks target distribution and handle deviations from expectations appropriately,Chorev et al (2022),1
 4.1,Data transformation,Test cleaning/transforming and/or feature engineering functions works as expected and handle failures appropriately.Common data transformations are: One-hot encoding; Ordinal variable encoding; Binning/discretization; Tokenization and vectorization; Log or power transformation; Feature Polynomial Expansion; Signal processing; Dimensionality reduction,Microsoft Industry Solutions Engineering Team (2024);Breck et al (2017),1
 5.1,Data splitting,Test splitting of data to training and test sets is of expected proportion and/or sizes and handle incorrect splits appropriately,Chorev et al (2022),1
 5.2,Data splitting,Test splitting of data does not duplicate observations between the training and test sets and handle overlaps appropriately,Chorev et al (2022),1
-5.3,Data splitting,Test splitting of data does not split groups of dependent observations between the training and test sets (e.g., time or geospatial) and handle any leakage appropriately,Chorev et al (2022),1
-5.4,Data splitting,Test splitting of data does not split groups of dependent observations between the training and test sets (e.g., time or geospatial) and handle any leakage appropriately,Chorev et al (2022),1
+5.3,Data splitting,Test splitting of data does not split groups of dependent observations between the training and test sets (e.g. time or geospatial) and handle any leakage appropriately,Chorev et al (2022),1
+5.4,Data splitting,Test splitting of data does not split groups of dependent observations between the training and test sets (e.g. time or geospatial) and handle any leakage appropriately,Chorev et al (2022),1
 5.5,Data splitting,Test pre-processor is only created from the training set and handle failures appropriately,,1
 6.1,Model training,Test model accept the correct inputs and handle errors appropriately,Microsoft Industry Solutions Engineering Team (2024),1
 6.2,Model training,Test model weights update during training and handle errors appropriately,Microsoft Industry Solutions Engineering Team (2024);Breck et al (2017),1
 7.1,Model outputs and evaluation,Test model produces the correctly shaped outputs and handle errors appropriately,Microsoft Industry Solutions Engineering Team (2024),1
 7.2,Model outputs and evaluation,Test model output ranges align with our expectations and handle deviations appropriately,Jordan (2020);Breck et al (2017),1
-7.3,Model outputs and evaluation,Test model performance compared to a very simple, baseline model and handle and performance issues appropriately,Breck et al (2017),1
+7.3,Model outputs and evaluation,Test model performance compared to a very simple or baseline model and handle and performance issues appropriately,Breck et al (2017),1
 7.4,Model outputs and evaluation,Test model for systematic errors and handle errors appropriately,Microsoft Industry Solutions Engineering Team (2024),1
 7.5,Model outputs and evaluation,Test model for directionality of predictions and handle errors appropriately,Ribeiro et al. (2020),1
 7.6,Model outputs and evaluation,Test model for invariance for predictions and handle invariances appropriately,Ribeiro et al. (2020),1
 7.7,Model outputs and evaluation,Test model performance meets minimum expectations and handle subpar performance appropriately,Chorev et al (2022),1
 7.8,Model outputs and evaluation,Test model performance across important data slices and handle subpar performance on particular slices appropriately,Breck et al (2017),1
 8.1,Model stability,Test for model weights and/or performance stability during training and handle instability appropriately,,1
-9.1,Bias/fairness issues,Test check for bias in data sets (overall, training, test, predictions) and handle and data bias appropriately,,1
+9.1,Bias/fairness issues,Test check for bias in data sets (overall; training; test; predictions) and handle and data bias appropriately,,1
 9.2,Bias/fairness issues,Test for performance bias for protected groups and handle any performance bias appropriately,Chorev et al (2022);Breck et al (2017),1
 10.1,Data drift,Test code checks for drift in prediction data distribution or feature correlations and handle drift appropriately,Chorev et al (2022);Breck et al (2017),1
 10.2,Data drift,Test model prediction performance against defined thresholds and handle any performance drift appropriately,,1
